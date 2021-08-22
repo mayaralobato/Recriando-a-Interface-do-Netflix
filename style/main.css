@@ -1,6 +1,20 @@
-body{
-    background-color:;
-}
-img-logo{
+:root{
+    --vermelho:#961818;
+    --preto:#141414;
+    --branco:#FEFEFE;
     
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preto);
+}
+.img-logo{
+    width: 130px;
+}
+header .container{
+    border: 1px solid white;
 }
