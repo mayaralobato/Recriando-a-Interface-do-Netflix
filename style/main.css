@@ -14,10 +14,15 @@ body{
     background: var(--preto);
     font-family:sans-serif;
     color: var(--branco);
+    font-size: 16px;
+    
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Séries/banner-greys.png');
+
+    height: 700px;
+    background-size:cover;
 }
 .img-logo{
     width: 100px;
-    margin-left: 50px;
     margin-top: 20px;
 }
 header .container{
@@ -34,18 +39,14 @@ header nav a{
 header nav a:hover{
     color: rgb(182, 181, 181);
 }
+
 /*filme principal*/
 .filme-principal{
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Séries/banner-greys.png');
-
-    height: 700px;
-    background-size:cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 250px;
 }
 .descricao{
     margin-top: 10px;
@@ -57,22 +58,46 @@ header nav a:hover{
     font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.botao{
-    background-color: rgba(0,0,0,.50);
+.botoes{
+    margin-left: 50px;
+}
+.botao-info{
+    background-color: rgba(25, 25, 25, 0.5);
     border:none;
     color: white;
 
     padding: 15px 30px;
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 14px;
 
     cursor: pointer;
-    transition: .3s ease all;
 }
-.botao:hover{
-    background-color: var(--branco);
-    color: var(--preto);
+.botao-info:hover{
+    background-color: rgba(25, 25, 25, 0.308);
 }
-.botao i {
+.botao-info i {
     margin-right: 8px;
+}
+.botao-assistir{
+    background-color:var(--branco);
+    border:none;
+    color:var(--preto);
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+.botao-assistir:hover{
+    background-color: rgba(255, 253, 253, 0.623);
+}
+.botao-assistir i {
+    margin-right: 8px;
+}
+.container{
+    margin-left: 50px;
+}
+.filme-principal .container{
+    width: 70%;
 }
