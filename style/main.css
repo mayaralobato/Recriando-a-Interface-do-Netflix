@@ -1,5 +1,5 @@
 :root{
-    --vermelho:#961818;
+    --vermelho:#ff0000;
     --preto:#141414;
     --branco:#FEFEFE;
     
@@ -9,12 +9,70 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*elemenos base*/
 body{
-    background: var(--preto);j
+    background: var(--preto);
+    font-family:sans-serif;
+    color: var(--branco);
 }
 .img-logo{
-    width: 130px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 header .container{
-    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: rgb(182, 181, 181);
+}
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Séries/banner-greys.png');
+
+    height: 700px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+.titulo{
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+}
+.botao i {
+    margin-right: 8px;
 }
