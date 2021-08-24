@@ -4,20 +4,19 @@
         flex-direction:column;
     }
     .botao{
-        margin-top: 5px;
+        margin-top: 50px;
         width: 400px;
     }
-    .container{
-
-    }
   
-   
-    @media screen and (min-widht:1024px){
-        .descricao{
-            width: 90%;
-        }
-       
+    .filme-principal{
+        width: 50%;
     }
+}
+@media screen and (min-widht:772px){
+    .descricao{
+        width: 90%;
+    }
+   
 }
 @media (max-widht:900px) {
     .filme-principal{

@@ -116,3 +116,43 @@ header nav a:hover{
     margin-top: 10px;
     border-radius: 5px;
 }
+.box-serie2{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.carrosel2{
+    margin-top: 50px;
+}
+
+
+
+
+
+@media screen and (max-widht:700px){
+    header .container{
+        display:flex;
+        flex-direction:column;
+    }
+    .botao{
+        margin-top: 50px;
+        width: 400px;
+    }
+  
+    .filme-principal{
+        width: 50%;
+    }
+}
+@media screen and (min-widht:772px){
+    .descricao{
+        width: 90%;
+    }
+   
+}
+@media (max-widht:900px) {
+    .filme-principal{
+        display: none;
+     }
+}
