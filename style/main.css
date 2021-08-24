@@ -49,6 +49,11 @@ header nav a:hover{
 
     height: 600px;
     background-size:cover;
+
+    background-position:top;
+}
+main .container{
+    margin-top: 150px;
 }
 .descricao{
     margin-top: 15px;
@@ -128,31 +133,17 @@ header nav a:hover{
 }
 
 
-
-
-
-@media screen and (max-widht:700px){
-    header .container{
-        display:flex;
-        flex-direction:column;
-    }
-    .botao{
+@media only screen and (max-widht:700px){
+    .botoes{
         margin-top: 50px;
         width: 400px;
     }
-  
-    .filme-principal{
-        width: 50%;
+    header.container{
+        display: flex;
+        flex-direction: row;
+        
     }
+    
 }
-@media screen and (min-widht:772px){
-    .descricao{
-        width: 90%;
-    }
-   
-}
-@media (max-widht:900px) {
-    .filme-principal{
-        display: none;
-     }
-}
+
+
